@@ -15,18 +15,19 @@ RES = int(1e4)
 WINDOW = 2
 
 ###USER_CHOICE###
-char_plot_title = r"Sc K$\beta$ spectrum, reconstructed from experiment"
-char_plot_name = "recon.png" #Reconstruction of experiment
-stick_plot_title = r"Sc K$\beta$ diagram, 4s vacancy, calculated to 5s"#
-stick_plot_name = "diagram_sticks.png"#Visualisation of theory
-fit_plot_title = r"Sc K$\beta$ diagram, 4s vacancy, calculated to 5s"#
-fit_plot_name = "diagram_fit_new.png"#Visualisation of fit
+char_plot_title = r""
+char_plot_name = "" #Reconstruction of experiment
+stick_plot_title = r""#
+stick_plot_name = ""#Visualisation of theory
+fit_plot_title = r""#
+fit_plot_name = ""#Visualisation of fit
 ######
 def main():
     work_path = os.getcwd()
-    to_reconstruct = os.path.join(work_path, "to_reconstruct_kbeta.csv")
+    ###PUT CHARACTERISATION .HERE
+    to_reconstruct = os.path.join(work_path, "")
     ###USER_CHOICE###
-    ct_folder_name = "sc_kb_ct_5s" ###Choose folder where ct files are stored
+    ct_folder_name = "" ###Choose folder where ct files are stored
     ######
     cts = os.path.join(work_path, ct_folder_name)
     stick_plot_path = os.path.join(cts, stick_plot_name)
@@ -35,7 +36,7 @@ def main():
     #create spectra object to store data from ct files
     thy = spectra(cts)
     ###USER_CHOICE###
-    to_fit = ['sc_kb_diagram_5s', 'sc_kb_4shole_5s']
+    to_fit = []
     ###.ct files to be included in fit
     ######
     thy.chosen = to_fit
@@ -60,7 +61,7 @@ def main():
 
     #visualise the fitting results, reconstruction and theoretical spectra
     ###USER_CHOICE###
-    stick_colours = ["black", "red"] ###Colours to represent satellites in stick plot
+    stick_colours = [] ###Colours to represent satellites in stick plot
     #MUST BE THE SAME LENGTH AS 'to_fit' (3 .ct files = 3 colours)
     ######
 
