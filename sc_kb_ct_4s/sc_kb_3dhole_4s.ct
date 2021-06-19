@@ -1,0 +1,14 @@
+ Transition between files:
+ f1 = iSc_3d-4s
+ f2 = fSc_3d-4s
+
+
+ Electric 2**( 1)-pole transitions
+ =================================
+
+    Upper         Lower 
+File Lev J  P File Lev J  P    E (Kays)        A (s-1)        gf          S
+ f1  1  1/2 +  f2  1  1/2 -  35990315.15 C  9.93785D+12  2.30043D-02  2.10426D-04
+                                         B  1.00415D+13  2.32441D-02  2.12619D-04
+ f1  1  1/2 +  f2  1  3/2 -  35994630.09 C  1.96673D+13  4.55152D-02  4.16288D-04
+                                         B  1.98761D+13  4.59985D-02  4.20709D-04
